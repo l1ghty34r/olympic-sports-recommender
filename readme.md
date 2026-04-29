@@ -1,4 +1,12 @@
-# 🏅 Olympic Sports Recommender & Analytics Dashboard
+# 🏅 Olympic Sports Recommender & Data Analytics Dashboard
+
+## 🚀 Live Demo
+👉 https://olympic-sports-recommender.streamlit.app  
+*(Interactive Olympic Sports Recommender & Analytics Dashboard)*
+
+---
+
+## 🧠 Overview
 
 This project is an interactive data application that combines a **sports recommender system** with an **Olympic analytics dashboard**.
 
@@ -6,11 +14,6 @@ It allows users to:
 - get personalized sport recommendations based on physical attributes  
 - explore historical Olympic medal data  
 - analyze performance trends across countries, sports, and years  
-
----
-
-## 🚀 Live Demo
-*(optional – kommt später mit Streamlit Cloud)*
 
 ---
 
@@ -33,11 +36,11 @@ It allows users to:
 
 ## 🏗️ Tech Stack
 
-- **Python** (pandas, numpy)
-- **SQL / PostgreSQL (Neon)**
-- **SQLAlchemy**
-- **Streamlit**
-- **Data Visualization** (matplotlib)
+- Python (pandas, numpy)
+- PostgreSQL (Neon)
+- SQLAlchemy
+- Streamlit
+- Matplotlib
 
 ---
 
@@ -54,6 +57,33 @@ It allows users to:
 ## ⚙️ Setup
 
 ### 1. Clone repository
-```bash
-git clone https://github.com/l1ghty34r/olympic-sports-recommender.git
-cd olympic-sports-recommender
+git clone https://github.com/l1ghty34r/olympic-sports-recommender.git  
+cd olympic-sports-recommender  
+
+### 2. Install dependencies
+pip install -r requirements.txt  
+
+### 3. Set environment variables
+Create a `.env` file in the project root:
+
+DATABASE_URL=your_neon_connection_string  
+
+### 4. Run the app
+streamlit run app.py  
+
+---
+
+## 📌 Key Learnings
+
+- Built an end-to-end data application (database → backend → frontend)  
+- Designed and queried relational databases using SQL  
+- Implemented a rule-based recommendation system  
+- Developed interactive dashboards for data exploration  
+
+---
+
+## 🔮 Future Improvements
+
+- Machine learning-based recommender  
+- Advanced analytics (trend analysis, forecasting)  
+- UI/UX improvements
