@@ -1,50 +1,59 @@
-# Olympia Streamlit App
+# 🏅 Olympic Sports Recommender & Analytics Dashboard
 
-## Voraussetzungen
+This project is an interactive data application that combines a **sports recommender system** with an **Olympic analytics dashboard**.
 
-Folgende Software muss installiert sein:
-
-* Python (empfohlen: Version 3.10 oder neuer)
-* PostgreSQL
-
----
-
-## Python Pakete installieren
-
-Im Projektordner im Terminal ausführen:
-
-```
-pip install -r requirements.txt
-```
+It allows users to:
+- get personalized sport recommendations based on physical attributes  
+- explore historical Olympic medal data  
+- analyze performance trends across countries, sports, and years  
 
 ---
 
-## Datenbank erstellen
-
-```
-createdb -U postgres olympics
-```
+## 🚀 Live Demo
+*(optional – kommt später mit Streamlit Cloud)*
 
 ---
 
-## SQL-Dump importieren
+## 🧠 Features
 
-```
-psql -U postgres -d olympics -f data/olympics_dump.sql
-```
+### 🔹 Sports Recommender
+- Input: height, weight, age, gender  
+- Output: top matching Olympic sports  
+- Similarity-based scoring system  
+- Top 10 recommendations with visualization  
+
+### 🔹 Olympic Analytics Dashboard
+- Filter by country, year, sport, discipline  
+- Medal distribution (Gold / Silver / Bronze)  
+- KPI overview (total medals)  
+- Top countries ranking  
+- Interactive charts  
 
 ---
 
-## Streamlit App starten
+## 🏗️ Tech Stack
 
-```
-streamlit run app.py
-```
+- **Python** (pandas, numpy)
+- **SQL / PostgreSQL (Neon)**
+- **SQLAlchemy**
+- **Streamlit**
+- **Data Visualization** (matplotlib)
 
 ---
 
-## App öffnen
+## 📊 Screenshots
 
-```
-http://localhost:8501
-```
+### Sports Recommender
+![Recommender](images/recommender.png)
+
+### Analytics Dashboard
+![Dashboard](images/dashboard.png)
+
+---
+
+## ⚙️ Setup
+
+### 1. Clone repository
+```bash
+git clone https://github.com/l1ghty34r/olympic-sports-recommender.git
+cd olympic-sports-recommender
